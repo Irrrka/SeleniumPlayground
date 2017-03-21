@@ -1,1 +1,1 @@
-# Selenium Playground - Pragmatic QA Complete
+# Selenium Playground - Pragmatic's QA Complete
