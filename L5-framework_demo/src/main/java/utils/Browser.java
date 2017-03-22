@@ -1,0 +1,24 @@
+package utils;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class Browser {
+
+	public static WebDriver driver;
+	final static String DRIVERS_PATH = "D:\\selenium_drvers\\";
+
+	public static void init(String string) {
+		System.setProperty("webdriver.gecko.driver", DRIVERS_PATH + "geckodriver.exe");
+	}
+
+	public static void init() {
+		// OVERLOAD
+		System.setProperty("webdriver.gecko.driver", DRIVERS_PATH + "geckodriver.exe");
+		driver = new FirefoxDriver();
+	}
+
+	public static void close() {
+		driver.quit();
+	}
+}
